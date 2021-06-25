@@ -42,3 +42,8 @@ if SELINUX == "enforcing"; then
 fi
 
 setenforce Permissive
+
+service avahi-daemon stop
+
+chkconfig avahi-daemon off
+
