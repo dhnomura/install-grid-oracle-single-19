@@ -9,6 +9,7 @@ I know there is many automatic task you can do with preinstall package, but the 
 
 - [ ] Install Missing Packages
 - [ ] Create Users, Groups and Directories
+- [ ] Customize the Kernel
 - [ ] Extract Oracle binaries
 - [ ] Create Oracle ASM Disks
 
@@ -24,5 +25,16 @@ I know there is many automatic task you can do with preinstall package, but the 
 ```sh
 ./create_users.sh
 ```
+```sh
+./create_directories.sh
+```
 
 - [x] Create Users, Groups and Directories
+
+## Customize the Kernel
+
+```sh
+./customize_kernel.sh
+```
+
+- [x] Customize the Kernel 

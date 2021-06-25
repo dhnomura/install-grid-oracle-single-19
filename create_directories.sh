@@ -4,14 +4,16 @@ declare -i group_counter=1001
 declare -i user_counter=1001
 
 function check_dir {
-    DIR=$1
+    DIR=$VAL
     if [ -d "$DIR" ]; then
         ### Take action if $DIR exists ###
-        echo "Installing config files in ${DIR}..."
+        chown oracle:oinstall $DIR
+        chmod 775 $DIR 
     else
         ###  Control will jump here if $DIR does NOT exists ###
-        echo "Error: ${DIR} not found. Can not continue."
-        exit 1
+        mkdir -p $DIR
+        chown oracle:oinstall $DIR 
+        chmod 775 $DIR
     fi
 }
 
@@ -29,7 +31,7 @@ cat parameters.json \
     |awk -F ":" '{print $2}' \
     |sed -e 's/"//' -e 's/",//' \
     |awk 'NF' \
-    |while read $1 
+    |while read VAL 
     do
         check_dir
     done
