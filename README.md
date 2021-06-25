@@ -8,8 +8,10 @@ Repository to deploy Oracle Grid Infrastructure and Oracle RDBMS Single Instance
 - [ ] Extract Oracle binaries
 - [ ] Create Oracle ASM Disks
 
+te
 - [x] Install Missing Packages
 
 ```sh
 ./install_missing_packages.sh
 ```
+te
