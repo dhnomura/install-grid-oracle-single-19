@@ -2,6 +2,8 @@
   "bin_files": {
     "remote_bin_database":"https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip",
     "remote_bin_grid":"https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_grid_home.zip",
+    "local_bin_database":"",
+    "local_bin_grid":"",
     "mos_user":"",
     "mos_pass":"",
     "loca_bin_dest":"/tmp"
@@ -23,19 +25,21 @@
       "",
       ""
     ],
-    "diretorios": [
-      {"tfa_home":"/u01/oracle/tfa"},      
-      {"stg_install":"/u01/oracle/install"},
-      {"grid_home":"/u01/oracle/19.0.0/grid"},
-      {"oracle_home":"/u01/oracle/19.0.0/database"},
-      {"oraInventory":"/u01/oracle/oraInventory"},
-      {"diagnostic_dest":"/u01/cdben3/logs01"},
-      {"audit_file_dest":"/u01/cdben3/logs01/adump"},
-      {"rdbms_logs":"/u01/cdben3/logs01/diag/rdbms/cdben3/cdben3"},
-      {"rdbms_wallet":"/u01/oracle/19.0.0/database/network/admin_wallet"},
-      {"asm_audit":"/u01/+asm/logs01/audit"},      
-      {"db_scripts":"/u01/clupmsg/scripts"}
-    ],
+    "directories": {
+      "tfa_home":"/u01/app/tfa",      
+      "stg_install":"",
+      "grid_base":"/u01/app/grid",
+      "oracle_base":"/u01/app/oracle",
+      "grid_home":"/u01/app/oracle/product/19.0.0/grid",
+      "oracle_home":"/u01/app/oracle/product/19.0.0/rdbms",
+      "oraInventory":"/u01/app/oraInventory",
+      "diagnostic_dest":"",
+      "audit_file_dest":"",
+      "rdbms_logs":"",
+      "rdbms_wallet":"",
+      "asm_audit":"",      
+      "db_scripts":""
+    },
 	  "ips_table": [
 		{"type":"public_a",   "cname":"", "ip":""},
 		{"type":"public_b",   "cname":"", "ip":""},
