@@ -1,4 +1,5 @@
 #!/bin/bash
+
 declare -i valida=0
 isInstalled() {
     if rpm -q $1 &> /dev/null; then

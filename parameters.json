@@ -6,16 +6,19 @@
     "mos_pass":"",
     "loca_bin_dest":"/tmp"
   },
-  "sistema_operacional": {
+  "operating_system": {
     "node_list":"srv-oracle-single-01",
     "number_nodes": 1,
     "cluster": "N",
-    "owner_grid": "grid",
-    "owner_database": "oracle",
-    "grupos": [
-      "dba",
-      "oinstall"
-    ],
+    "os_users": {
+      "grid_owner": "grid",
+      "database_owner": "oracle"
+    },
+    "os_groups": {
+      "product_group":"oinstall",
+      "rdbms_group":"dba",
+      "grid_group":"asmadmin"
+    },
     "packages": [
       "",
       ""
