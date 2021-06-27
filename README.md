@@ -10,8 +10,9 @@ I know there is many automatic task you can do with preinstall package, but the 
 - [ ] Install Missing Packages
 - [ ] Create Users, Groups and Directories
 - [ ] Customize the Kernel
-- [ ] Extract Oracle binaries
+- [ ] Install Grid Home
 - [ ] Create Oracle ASM Disks
+- [ ] Configure HAS Stack
 
 ## Install Missing Packages
 ```sh
@@ -38,3 +39,15 @@ I know there is many automatic task you can do with preinstall package, but the 
 ```
 
 - [x] Customize the Kernel 
+
+## Extract Oracle binaries
+
+```sh
+./create_grid_response_files.sh
+```
+
+```sh
+./install_grid.sh
+```
+
+- [x] Install Grid Home
