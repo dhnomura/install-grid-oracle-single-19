@@ -64,6 +64,7 @@ libXext
 libXext.i686 
 zlib-devel 
 zlib-devel.i686
+unzip
 )
 for i in "${array[@]}"
 do

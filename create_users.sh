@@ -6,9 +6,9 @@ declare -i user_counter=1001
 PRODUCT_GROUP=`cat parameters.json | jq '.operating_system.os_groups.product_group'|sed -e 's/^"//' -e 's/"$//'`
 RDBMS_GROUP=`cat parameters.json | jq '.operating_system.os_groups.rdbms_group'|sed -e 's/^"//' -e 's/"$//'`
 GRID_GROUP=`cat parameters.json | jq '.operating_system.os_groups.grid_group'|sed -e 's/^"//' -e 's/"$//'`
-
 GRID_OWNER=`cat parameters.json | jq '.operating_system.os_users.grid_owner'|sed -e 's/^"//' -e 's/"$//'`
 RDBMS_OWNER=`cat parameters.json | jq '.operating_system.os_users.database_owner'|sed -e 's/^"//' -e 's/"$//'`
+
 
 
 groupadd $PRODUCT_GROUP -g $group_counter; group_counter=$group_counter+1

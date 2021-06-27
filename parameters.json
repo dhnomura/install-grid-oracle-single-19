@@ -3,7 +3,7 @@
     "remote_bin_database":"https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_db_home.zip",
     "remote_bin_grid":"https://download.oracle.com/otn/linux/oracle19c/190000/LINUX.X64_193000_grid_home.zip",
     "local_bin_database":"",
-    "local_bin_grid":"",
+    "local_bin_grid":"/tmp/LINUX.X64_193000_grid_home.zip",
     "mos_user":"",
     "mos_pass":"",
     "loca_bin_dest":"/tmp"
