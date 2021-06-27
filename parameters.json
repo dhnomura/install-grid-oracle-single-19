@@ -83,12 +83,12 @@
   "grid": {
     "diskgroups": [
       {"dg_uso":"grid_quorum"       ,"dg_name":"DG_ASM"            ,"dg_redundancy":"high"    ,"qt_disco":"5","disk_size":"1"},      
-      {"dg_uso":"rdbms_data_cdb"    ,"dg_name":"DG_DATA"           ,"dg_redundancy":"external","qt_disco":"1","disk_size":"32"},
-      {"dg_uso":"rdbms_data_pdb"    ,"dg_name":"DG_DATA"           ,"dg_redundancy":"external","qt_disco":"1","disk_size":"32"},
-      {"dg_uso":"rdbms_archive"     ,"dg_name":"DG_RECO"           ,"dg_redundancy":"external","qt_disco":"1","disk_size":"32"},
-      {"dg_uso":"rdbms_redo"        ,"dg_name":"DG_RECO"           ,"dg_redundancy":"external","qt_disco":"1","disk_size":"32"},
-      {"dg_uso":"grid_acfs_backup"  ,"dg_name":"DG_BACKUP"         ,"dg_redundancy":"external","qt_disco":"1","disk_size":"32"},
-      {"dg_uso":"grid_acfs_sistema" ,"dg_name":"DG_ACFS"           ,"dg_redundancy":"external","qt_disco":"1","disk_size":"32"}
+      {"dg_uso":"rdbms_data_cdb"    ,"dg_name":"DG_DATA"           ,"dg_redundancy":"EXTERNAL","qt_disco":"1","disk_size":"32"},
+      {"dg_uso":"rdbms_data_pdb"    ,"dg_name":"DG_DATA"           ,"dg_redundancy":"EXTERNAL","qt_disco":"1","disk_size":"32"},
+      {"dg_uso":"rdbms_archive"     ,"dg_name":"DG_RECO"           ,"dg_redundancy":"EXTERNAL","qt_disco":"1","disk_size":"32"},
+      {"dg_uso":"rdbms_redo"        ,"dg_name":"DG_RECO"           ,"dg_redundancy":"EXTERNAL","qt_disco":"1","disk_size":"32"},
+      {"dg_uso":"grid_acfs_backup"  ,"dg_name":"DG_BACKUP"         ,"dg_redundancy":"EXTERNAL","qt_disco":"1","disk_size":"32"},
+      {"dg_uso":"grid_acfs_sistema" ,"dg_name":"DG_ACFS"           ,"dg_redundancy":"EXTERNAL","qt_disco":"1","disk_size":"32"}
     ],
     "asm_acfs_volumes": [
       "ORA_BKP",

@@ -8,3 +8,6 @@ export PRODUCT_GROUP=`cat parameters.json | jq '.operating_system.os_groups.prod
 chown $GRID_OWNER:$PRODUCT_GROUP $LOCAL_BIN_GRID
 sudo -u $GRID_OWNER unzip $LOCAL_BIN_GRID -d $GRID_HOME
 sudo -u $GRID_OWNER $GRID_HOME/gridSetup.sh -silent -responseFile /tmp/setupgrid.rsp -ignorePrereq
+
+/u01/app/oraInventory/orainstRoot.sh
+
