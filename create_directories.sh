@@ -4,12 +4,12 @@ function check_dir {
     DIR=$VAL
     if [ -d "$DIR" ]; then
         ### Take action if $DIR exists ###
-        chown $RDBMS_OWNER:$PRODUCT_GROUP $DIR
+        chown $GRID_OWNER:$PRODUCT_GROUP $DIR
         chmod 775 $DIR 
     else
         ###  Control will jump here if $DIR does NOT exists ###
         mkdir -p $DIR
-        chown $RDBMS_OWNER:$PRODUCT_GROUP $DIR 
+        chown $GRID_OWNER:$PRODUCT_GROUP $DIR 
         chmod 775 $DIR
     fi
 }
